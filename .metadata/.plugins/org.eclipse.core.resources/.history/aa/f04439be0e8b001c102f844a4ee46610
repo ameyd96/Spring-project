@@ -1,9 +1,0 @@
-package com.pojo;
-
-import org.springframework.data.repository.CrudRepository;
-
-import com.pojo.Topic;
-
-public interface TopicRepository extends CrudRepository<Topic, String>{
-
-}
