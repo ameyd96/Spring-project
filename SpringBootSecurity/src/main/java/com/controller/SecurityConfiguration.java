@@ -14,7 +14,21 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		//set your configuration on auth object
-		auth.inMemoryAuthentication().withUser("blah").password("blah").roles("USER");
+		auth.inMemoryAuthentication()
+		.withUser("blah")
+		.password("blah")
+		.roles("USER")
+		.and()
+		.withUser("foo")
+		.password("foo")
+		.roles("ADMIN");
+		
+		//if you want to add more user then use method chaining and use :
+		//.and()
+		//.withUser("foo")
+		//.password("foo")
+		//.roles("ADMIN")
+		
 	}
 	
 	@Bean
