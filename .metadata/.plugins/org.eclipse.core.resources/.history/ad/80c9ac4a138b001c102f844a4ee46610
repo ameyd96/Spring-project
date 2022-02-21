@@ -1,0 +1,7 @@
+package com.cource;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface TopicRepository extends CrudRepository<Cource, String>{
+
+}

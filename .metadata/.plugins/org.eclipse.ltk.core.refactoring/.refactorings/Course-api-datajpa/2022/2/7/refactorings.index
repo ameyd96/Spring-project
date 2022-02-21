@@ -1,0 +1,10 @@
+1644565597905	Move compilation unit
+1644565704580	Move compilation unit
+1644567431179	Delete element
+1644567449665	Copy package
+1644567469350	Delete element
+1644567513564	Rename type 'Topic'
+1644567536879	Rename type 'TopicController'
+1644567551521	Rename type 'TopicRepository'
+1644567567481	Rename type 'TopicService'
+1644568557046	Encapsulate field 'topic'
