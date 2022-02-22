@@ -2,6 +2,7 @@ package com.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
@@ -39,4 +40,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	}
 	//getPasswordEncoder() this method for creating hashcode or encoded password format
 
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		//method is used to grant access of URL to perticular role.
+		http.authorizeRequests()
+		.antMatchers("/admin").hasRole("ADMIN")  //permit for ADMIN role
+		.antMatchers("/user").hasAnyRole("USER","ADMIN")   //permit for USER role
+		.antMatchers("/").permitAll()  //permit for every role
+		
+		.and().formLogin();
+	}
+
+	
+	
 }
