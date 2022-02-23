@@ -25,6 +25,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		auth.jdbcAuthentication()
 		//created default schema with user table and values
 		.dataSource(dataSource) ; //embeded dataabse H2 .by default any database u use it will point to it
+		
+		
+		//.userByUsernameQuery : this is used for write db query and access differnt tabeles. 
+		
 //		.withDefaultSchema()
 //		.withUser(
 //				User.withUsername("user")
