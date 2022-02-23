@@ -24,18 +24,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.jdbcAuthentication()
 		//created default schema with user table and values
-		.dataSource(dataSource)  //embeded dataabse H2 .by default any database u use it will point to it
-		.withDefaultSchema()
-		.withUser(
-				User.withUsername("user")
-				.password("pass")
-				.roles("USER")
-				)
-		.withUser(
-				User.withUsername("admin")
-				.password("pass")
-				.roles("ADMIN")
-				);
+		.dataSource(dataSource) ; //embeded dataabse H2 .by default any database u use it will point to it
+//		.withDefaultSchema()
+//		.withUser(
+//				User.withUsername("user")
+//				.password("pass")
+//				.roles("USER")
+//				)
+//		.withUser(
+//				User.withUsername("admin")
+//				.password("pass")
+//				.roles("ADMIN")
+//				);
 		
 	}
 
