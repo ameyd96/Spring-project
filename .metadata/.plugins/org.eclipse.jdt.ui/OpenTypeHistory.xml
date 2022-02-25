@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=SpringSecurit-jpa-mysql/C:\/Users\/ameyd\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.6.1\/spring-security-core-5.6.1.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.security=/=/maven.artifactId=/spring-security-core=/=/maven.version=/5.6.1=/=/maven.scope=/compile=/&lt;org.springframework.security.core.userdetails(UserDetailsService.class[UserDetailsService" modifiers="1537" timestamp="1645431280769"/>
+    <typeInfo handle="=SpringSecurit-jpa-mysql/C:\/Users\/ameyd\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/5.6.1\/spring-security-core-5.6.1.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.security=/=/maven.artifactId=/spring-security-core=/=/maven.version=/5.6.1=/=/maven.scope=/compile=/&lt;org.springframework.security.core.userdetails(UserDetails.class[UserDetails" modifiers="1537" timestamp="1645431280769"/>
+    <typeInfo handle="=SpringSecurit-jpa-mysql/C:\/Users\/ameyd\/Downloads\/sts-4.13.1.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\/jre\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/&lt;java.nio.file.attribute(UserDefinedFileAttributeView.class[UserDefinedFileAttributeView" modifiers="1537" timestamp="1644309269301"/>
+</typeInfoHistroy>
