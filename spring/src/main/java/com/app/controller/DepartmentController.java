@@ -3,6 +3,8 @@ package com.app.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +25,7 @@ public class DepartmentController {
 	private DepartmentService departmentService;
 	
 	@PostMapping("/departments")
-	public Department saveDepartments(@RequestBody Department department) {
+	public Department saveDepartments(@Valid @RequestBody Department department) {
 		return departmentService.saveDepartments(department);
 		 
 		
