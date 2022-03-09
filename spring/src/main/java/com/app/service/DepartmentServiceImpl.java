@@ -2,11 +2,13 @@ package com.app.service;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.entity.Department;
+import com.app.error.DepartmentNotFoundException;
 import com.app.repository.DepartmentRepository;
 
 @Service
@@ -31,9 +33,16 @@ public class DepartmentServiceImpl implements DepartmentService{
 
 
 	@Override
-	public Department fetchById(Long id) {
+	public Department fetchById(Long id) throws DepartmentNotFoundException {
 		
-		return departmentRepository.findById(id).get();
+		//return departmentRepository.findById(id).get();
+		Optional<Department> department = departmentRepository.findById(id);
+		
+		if(!department.isPresent()) {
+			throw new DepartmentNotFoundException("Department is not found.");
+		}
+		
+		return department.get();
 	}
 
 

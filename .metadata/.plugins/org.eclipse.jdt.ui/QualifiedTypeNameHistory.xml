@@ -54,4 +54,9 @@
     <fullyQualifiedTypeName name="org.aspectj.apache.bcel.classfile.Module.Require"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.NotBlank"/>
+    <fullyQualifiedTypeName name="javax.validation.Valid"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.core.sym.Name"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 </qualifiedTypeNameHistroy>

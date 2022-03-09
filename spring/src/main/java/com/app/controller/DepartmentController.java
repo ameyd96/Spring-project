@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.entity.Department;
+import com.app.error.DepartmentNotFoundException;
 import com.app.service.DepartmentService;
 
 
@@ -47,7 +48,7 @@ public class DepartmentController {
 	
 	
 	@GetMapping("/departments/{id}")
-	public Department fetchById(@PathVariable("id") Long id) {
+	public Department fetchById(@PathVariable("id") Long id) throws DepartmentNotFoundException {
 		return departmentService.fetchById(id);
 	}
 	
