@@ -1,13 +1,13 @@
-
-import './App.css';
+import "./App.css";
+import AddEmployee from "./components/AddEmployee";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="bg-gray-800">
-      <div className="h-16 px-8 flex items-center">
-        <p className="text-white font-bold">Employee Management System</p>
-      </div>
-    </div>
+    <>
+      <NavBar />
+      <AddEmployee />
+    </>
   );
 }
 
