@@ -44,4 +44,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return true;
 	}
 
+	@Override
+	public Employee getEmployeeById(Long id) {
+		EmployeeEntity employeeEntity = employeeRepository.findById(id).get();
+		
+		Employee empolyee = new Employee();
+		BeanUtils.copyProperties(employeeEntity, empolyee);
+		
+		return empolyee;
+	}
+
 }

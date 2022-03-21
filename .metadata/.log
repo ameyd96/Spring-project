@@ -4127,3 +4127,6 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-21 00:41:21.452
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.WyNMtHqo => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-03-21 01:54:08.272
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
