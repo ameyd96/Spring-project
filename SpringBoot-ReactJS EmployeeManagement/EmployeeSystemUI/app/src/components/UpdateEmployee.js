@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import EmployeeService from "../services/EmployeeService";
 
+
 const UpdateEmployee = () => {
   const navigate = useNavigate();
   const [employee, setEmployee] = useState({
