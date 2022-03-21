@@ -11,7 +11,8 @@ function App() {
     <NavBar />
     <Routes>
     <Route index element={<EmployeeList />}></Route>
-      <Route path='/' element={<EmployeeList />}> </Route>
+      <Route path='/' element={<EmployeeList />}>
+      </Route><Route path='/employeeList' element={<EmployeeList />}> </Route>
 
       <Route path='/addEmployee' element={<AddEmployee />}></Route>
     </Routes>
