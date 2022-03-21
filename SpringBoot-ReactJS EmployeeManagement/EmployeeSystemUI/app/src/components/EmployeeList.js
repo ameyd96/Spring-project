@@ -19,6 +19,18 @@ const EmployeeList = () => {
     setLoading(false);
   };
 
+  const deleteEmployee =(e,id) => {
+    e.preventDefault();
+
+    EmployeeService.deleteEmployee(id).then((res) =>{
+      if(employee){
+        setEmployee((prevElement) =>{
+          return prevElement.filter((employee) => employee.id !== id);
+        })
+      }
+    })
+
+  }
   useEffect(() => {
     fetchData();
   }, []);
@@ -54,7 +66,7 @@ const EmployeeList = () => {
           {!loading && (
             <tbody>
               {employee.map((emp) =>(
-              <Employee emp={emp} key={emp.id}/>
+              <Employee emp={emp} key={emp.id} deleteEmployee={deleteEmployee}/>
               ))}
             </tbody>
           )}
