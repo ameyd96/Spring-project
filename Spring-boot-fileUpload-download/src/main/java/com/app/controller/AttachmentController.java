@@ -34,7 +34,7 @@ public class AttachmentController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		downloadUrl = ServletUriComponentsBuilder.fromContextPath(null)
+		downloadUrl = ServletUriComponentsBuilder.fromCurrentContextPath()
 				.path("/download/")
 				.path(attachment.getId())
 				.toUriString();
