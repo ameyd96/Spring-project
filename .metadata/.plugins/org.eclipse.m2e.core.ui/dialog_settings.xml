@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Spring\spring-boot-microservices-workshop"/>
 			<item value="D:\Spring\spring"/>
 		</list>
 		<list key="projectNameTemplate">
